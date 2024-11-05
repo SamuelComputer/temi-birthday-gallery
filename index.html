@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>My Birthday Gallery</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial;
+        }
+
+        .header {
+            text-align: center;
+            padding: 32px;
+        }
+
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+            padding: 0 4px;
+        }
+
+        /* Create four equal columns that sits next to each other */
+        .column {
+            flex: 25%;
+            max-width: 25%;
+            padding: 0 4px;
+        }
+
+        .column img {
+            margin-top: 8px;
+            vertical-align: middle;
+        }
+
+        /* Responsive layout - makes a two column-layout instead of four columns */
+        @media (max-width: 800px) {
+            .column {
+                flex: 50%;
+                max-width: 50%;
+            }
+        }
+
+        /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+        @media (max-width: 600px) {
+            .column {
+                flex: 100%;
+                max-width: 100%;
+            }
+        }
+
+
+
+        .column img {
+            width: 100%;
+            transition: transform 0.3s ease;
+        }
+
+        .column img:hover {
+            transform: scale(1.1);
+        }
+
+
+
+    </style>
+
+
+
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="w3-display-container w3-content w3-center" style="max-width:1500px">
+        <img class="w3-image" src="header.jpg" alt="Me" width="1500" height="600">
+        <div class="w3-display-middle w3-padding-large w3-border w3-wide w3-text-light-grey w3-center">
+            <h1 class="w3-hide-medium w3-hide-small w3-xxxlarge">DAVID CHRISTIANA OLUWAKEMI</h1>
+            <h5 class="w3-hide-large" style="white-space:nowrap">DAVID CHRISTIANA OLUWAKEMI</h5>
+            <h3 class="w3-hide-medium w3-hide-small"> November 9th</h3>
+        </div>
+
+        <!-- Navbar (placed at the bottom of the header image) -->
+        <div class="w3-bar w3-light-grey w3-round w3-display-bottommiddle w3-hide-small" style="bottom:-16px">
+            <a href="#" class="w3-bar-item w3-button">Home</a>
+            <a href="#portfolio" class="w3-bar-item w3-button">Pictures</a>
+            <a href="#contact" class="w3-bar-item w3-button">Send Wishes</a>
+        </div>
+    </header>
+
+    <!-- Navbar on small screens -->
+    <div class="w3-center w3-light-grey w3-padding-16 w3-hide-large w3-hide-medium">
+        <div class="w3-bar w3-light-grey">
+            <a href="#" class="w3-bar-item w3-button">Home</a>
+            <a href="#portfolio" class="w3-bar-item w3-button">Pictures</a>
+            <a href="#contact" class="w3-bar-item w3-button">Send Wishes</a>
+        </div>
+    </div>
+
+
+    <!-- Page content -->
+
+    <!-- Header -->
+    <div class="header">
+        <h1>Thank You All For Visiting ❤️</h1>
+    </div>
+
+    <!-- Photo Grid -->
+    <div class="row" id="portfolio">
+        <div class="column">
+            <img src="img.jpg" style="width:100%">
+            <img src="img2.jpg" style="width:100%">
+            <img src="img17.jpg" style="width:100%">
+            <img src="img11.jpg" style="width:100%">
+            <img src="img15.jpg" style="width:100%">
+        </div>
+
+        <div class="column">
+            <img src="img5.jpg" style="width:100%">
+            <img src="img18.jpg" style="width:100%">
+            <img src="img9.jpg" style="width:100%">
+            <img src="img4.jpg" style="width:100%">
+
+        </div>
+
+        <div class="column">
+            <img src="img12.jpg" style="width:100%">
+            <img src="img14.jpg" style="width:100%">
+            <img src="img3.jpg" style="width:100%">
+            <img src="img8.jpg" style="width:100%">
+            <img src="img13.jpg" style="width:100%">
+        </div>
+
+
+        <div class="column">
+            <img src="img6.jpg" style="width:100%">
+            <img src="img16.jpg" style="width:100%">
+            <img src="img19.jpg" style="width:100%">
+            <img src="img7.jpg" style="width:100%">
+            <img src="img10.jpg" style="width:100%">
+        </div>
+
+    </div>
+
+    <!-- Contact -->
+    <div class="w3-light-grey w3-padding-large w3-padding-32 w3-margin-top" id="contact">
+        <h3 class="w3-center">Send Your Wishes</h3>
+        <hr>
+        <div class="w3-center">
+            HURRAY!!!...... IT'S MY BIRTHDAY 🎊 🎉
+            <br>
+            <br>
+            <b>Click the link below to send me a word of prayer and also send me a birthday gift </b>
+
+        </div>
+        <br>
+        <a href="https://wa.link/b0wt7s" class="w3-button w3-block w3-green">Send</a>
+
+    </div>
+
+    <!-- End page content -->
+</div>
+
+</body>
+</html>
